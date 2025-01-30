@@ -22,3 +22,5 @@ deployment "production" {
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
 }
+
+# change to trigger commit
