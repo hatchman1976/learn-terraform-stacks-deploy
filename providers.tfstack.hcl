@@ -30,7 +30,8 @@ provider "aws" "configurations" {
     region = each.value
 
     assume_role_with_web_identity {
-      role_arn           = var.role_arn
+      role_arn           = "arn:aws:iam::736654693886:role/stacks-terraform_hatchman76-learn-terraform-stacks-identity-toke"
+      session_name = "terraform"
       web_identity_token = var.identity_token
     }
 
